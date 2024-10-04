@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #d18e8e;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+
+/* Navigation Links */
+.navigation p {
+    margin: 0 20px;
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.navigation p::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #61dafb;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation p:hover {
+    color: #61dafb;
+}
+
+.navigation p:hover::before {
+    visibility: visible;
+    width: 100%;
+}
